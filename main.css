@@ -1,0 +1,48 @@
+html {box-sizing:border-box;}
+* , *::before, *::after {box-sizing:inherit;}
+
+
+#container {
+    height: 315px;
+    width: 500px;
+    overflow: hidden;
+    max-height: 275px;
+    border:1px solid #00c0cf;
+    font-family:sans-serif;
+}
+
+#container > div{
+    width: 100%;
+    border: 1px solid #00c0cf;
+    border-top: 0px solid #fff;
+}
+
+.sectionHeader {
+    height: 45px;
+    color: white;
+    font-size: 1.5em;
+    background-color: #01c6d6;
+    padding:5px;
+}
+
+.sectionHeader:hover{
+    background-color: #01daed;
+}
+
+.whitespace {
+    padding: 0px 20px;
+    height: 0px;
+    max-height:0px;
+    color: #888;
+    font-size:0px;
+    transition: max-height .5s, padding .5s, height .5s ease-in-out;
+    overflow:hidden;
+}
+
+.whitespace.active {
+    padding:20px 20px;
+    height:140px;
+    max-height: 140px;
+    font-size:1em;
+    transition: max-height .25s, padding .25s, height .25s ease-in-out;
+}
